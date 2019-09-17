@@ -1,48 +1,43 @@
-# Welcome to DSAC!
+# <!-- Home -->
 
-[![Discord chat](https://img.shields.io/discord/477959324183035936.svg?logo=discord)](https://discord.gg/YFyJpmH) [![GitHub last commit](https://img.shields.io/github/last-commit/GhostWriters/DSAC/master.svg)](https://github.com/GhostWriters/DSAC/commits/master) [![GitHub license](https://img.shields.io/github/license/GhostWriters/DSAC.svg)](https://github.com/GhostWriters/DSAC/blob/master/LICENSE.md) [![Travis (.com) branch](https://img.shields.io/travis/com/GhostWriters/DSAC/master.svg?logo=travis)](https://travis-ci.com/GhostWriters/DSAC)
+DockSTARTer App Config
 
-DSAC is your friend! DSAC is your buddy!  DSAC's ultimate goal is to give you all the proper configuration information for every selected application at install!
+The main goal of DockSTARTer App Config (aka DSAC) is to make it quick and easy to get you running with some basic configurations.
 
-### What is DSAC?
-
-DSAC is shorthand for DockSTARTer Application Configurator
-
-### What DSAC is NOT?
-
-DSAC will not replace DockSTARTer's configuration nor is it meant to. DSAC is an optional set of very specific configurations and tasks to make sure you have a turnkey and completely setup server!
-
-### Why DSAC?
-
-DSAC will help you through the tough and complex task of having a turnkey setup for your DockSTARTer.
-
-
-It will assist with:
-* Presenting you with a checklist of activities necessary.
-* Error check you at critical steps and collect the information needed to continue.
-* The ability to fill-in the configuration information necessary.
-* Pushing that info into your DockSTARTer install.
-
-### What to know about DSAC?
-
-DSAC is still under heavy development and early users; expect there to be many bugs.
+You may choose to rely on DSAC for various changes to your Docker system, or use it as a stepping stone and learn to do more advanced configurations and connecting applications together.
 
 ## Getting Started
 
+### System Requirements
+
+- We maintain the same system requirement as [DockSTARTer](https://dockstarter.com/). You can find the [DockSTARTer System Requirements here](https://dockstarter.com/introduction/#system-requirements)
+
+TL;DR:
+- You must be running a [Supported platform](https://docs.docker.com/install/#supported-platforms) or an operating system based on a supported platform. Platforms named below will link to documentation listing compatible versions.
+- You must be logged in as a non-root user with sudo permissions.
+
 ### One Time Setup (required)
 
-Do the following, and then see [DockSTARTer](https://github.com/GhostWriters/DSAC) for further usage details.
-
-- APT Systems (Debian/Ubuntu/Raspbian/etc)
+- APT Systems ([Debian](https://docs.docker.com/install/linux/docker-ce/debian/#os-requirements), [Ubuntu](https://docs.docker.com/install/linux/docker-ce/ubuntu/#os-requirements), etc)
 
 ```bash
-# NOTE: Ubuntu 18.10 is known to have issues with the installation process, 18.04 is recommended
 sudo apt-get install curl git
 bash -c "$(curl -fsSL https://ghostwriters.github.io/DSAC/main.sh)"
 sudo reboot
 ```
 
-- DNF Systems (Fedora)
+> Raspbian requires a few extra commands
+
+```bash
+sudo apt-get update
+sudo apt-get dist-upgrade
+sudo apt-get install curl git
+bash -c "$(curl -fsSL https://get.docker.com)"
+bash -c "$(curl -fsSL https://ghostwriters.github.io/DSAC/main.sh)"
+sudo reboot
+```
+
+- DNF Systems ([Fedora](https://docs.docker.com/install/linux/docker-ce/fedora/#os-requirements))
 
 ```bash
 sudo dnf install curl git
@@ -50,7 +45,7 @@ bash -c "$(curl -fsSL https://ghostwriters.github.io/DSAC/main.sh)"
 sudo reboot
 ```
 
-- YUM Systems (CentOS)
+- YUM Systems ([CentOS](https://docs.docker.com/install/linux/docker-ce/centos/#os-requirements))
 
 ```bash
 sudo yum install curl git
@@ -58,9 +53,38 @@ bash -c "$(curl -fsSL https://ghostwriters.github.io/DSAC/main.sh)"
 sudo reboot
 ```
 
+<details>
+  <summary>Alternate install (any system)</summary>
+
+The standard install above downloads the initial script using a method with some known risks. For those concerned with the security of the above method here is an alternative:
+
+```bash
+## NOTE: Run the appropriate command for your distro
+sudo apt-get install curl git
+sudo dnf install curl git
+sudo yum install curl git
+
+## NOTE: Do not sudo the next line.
+git clone https://github.com/GhostWriters/DSAC.git "/home/${USER}/.dsac"
+sudo bash /home/${USER}/.dsac/main.sh -vi
+sudo reboot
+```
+
+</details>
+
+### Running DSAC
+
+```bash
+sudo dsac
+```
+
+To run DSAC use the command above. You should now see the main menu.
+
+See our [documentation](https://dsac.dockstarter.com/introduction/) for more detailed information.
+
 ## Support
 
-[![Discord chat](https://img.shields.io/discord/477959324183035936.svg?logo=discord)](https://discord.gg/YFyJpmH)
+[![Discord chat](https://img.shields.io/discord/477959324183035936.svg?style=flat-square&color=607D8B&logo=discord)](https://discord.gg/YFyJpmH)
 
 Click the chat badge to join us on Discord for support!
 
@@ -68,19 +92,10 @@ Click the chat badge to join us on Discord for support!
 
 ## Contributors
 
-[![GitHub contributors](https://img.shields.io/github/contributors/GhostWriters/DockSTARTer.svg)](https://github.com/GhostWriters/DSAC/graphs/contributors)
+[![GitHub contributors](https://img.shields.io/github/contributors/GhostWriters/DSAC.svg?style=flat-square&color=607D8B)](https://github.com/GhostWriters/DSAC/graphs/contributors)
 
-This project exists thanks to all the people who contribute.
-
-## Help out!
-Want to contribute? We created the develop.sh script to assist! Run the following and get started!
-NOTE: This assumes that you have run one of the above from "One Time Setup"
-
-```bash
-curl -fsSL -o develop.sh https://ghostwriters.github.io/DSAC/.scripts/develop.sh
-bash develop.sh -h
-```
+This project exists thanks to all the people who contribute!
 
 ## Special Thanks
 
-In addition to the special thanks found in https://github.com/GhostWriters/DockSTARTer we would also like to thank https://github.com/GhostWriters and all those involved in the DockSTARTer project!
+In addition to all those mention on [[DockSTARTer](https://dockstarter.com/)] we would also like to thank [[GhostWriters](https://github.com/GhostWriters/)] for being willing to partner and work with us to create DSAC!
