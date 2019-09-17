@@ -28,3 +28,7 @@ theme:
 # Navigation
 nav:
   - Home: index.md
+  - Introduction: introduction.md
+  - Basics:
+      - Supported Applications: basics/supported-apps.md
+      - Menu Options: basics/menu-options.md
