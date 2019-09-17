@@ -13,6 +13,7 @@ You may choose to rely on DSAC for various changes to your Docker system, or use
 - We maintain the same system requirement as [DockSTARTer](https://dockstarter.com/). You can find the [DockSTARTer System Requirements here](https://dockstarter.com/introduction/#system-requirements)
 
 TL;DR:
+
 - You must be running a [Supported platform](https://docs.docker.com/install/#supported-platforms) or an operating system based on a supported platform. Platforms named below will link to documentation listing compatible versions.
 - You must be logged in as a non-root user with sudo permissions.
 
