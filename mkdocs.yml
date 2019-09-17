@@ -1,0 +1,30 @@
+# Project information
+site_name: "DSAC"
+site_description: "DSAC helps you get started with home server apps running in Docker."
+site_author: "GhostWriters"
+site_url: "https://dsac.dockstarter.com"
+
+# Repository
+repo_name: "GhostWriters/DSAC"
+repo_url: "https://github.com/GhostWriters/DSAC"
+edit_uri: "https://github.com/GhostWriters/DSAC.DockSTARTer.com/edit/master/docs/"
+
+# Copyright
+copyright: "Copyright &copy; 2018 - 2019 GhostWriters"
+
+# Configuration
+theme:
+  name: "material"
+  language: "en"
+  palette:
+    primary: "blue grey"
+    accent: "indigo"
+  font:
+    text: "Roboto"
+    code: "Roboto Mono"
+  logo: "img/icon.png"
+  favicon: "img/favicon.ico"
+
+# Navigation
+nav:
+  - Home: index.md
