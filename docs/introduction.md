@@ -16,7 +16,9 @@
 - DSAC does not require the use of DockSTARTer, though it uses it for some of the menu options.
 
 ## Recommended Reading
+
 Since much of this is based around DockSTARTer, it is recommended that you head over to [DockSTARTer](https://dockstarter.com/) and read about it.
 
 ## System Requirements
+
 We maintain the same system requirement as [DockSTARTer](https://dockstarter.com/). You can find the [DockSTARTer System Requirements here](https://dockstarter.com/introduction/#system-requirements)

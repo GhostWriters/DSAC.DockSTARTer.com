@@ -22,7 +22,6 @@ In addition, if you ever want to remove an application, you can use this option 
 
 ![Imgur](https://i.imgur.com/pnJeuFa.png)
 
-
 ## Configure Existing Containers
 
 The "Custom Setup" menu option will use Docker commands to find supported apps and link any together that can be.
