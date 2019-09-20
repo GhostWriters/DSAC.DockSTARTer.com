@@ -10,6 +10,8 @@ The "Quick Setup Configurations" menu option will allow you to select app types 
 
 By default, all the app types are selected. Running it like this will give you a media setup with apps that are connected together. All you will have to do is configure the applications to your liking.
 
+Note that this (currently) does not include a media streaming app like Plex, Emby, or anthing else. You can run `sudo ds`, choose "Configuration", then choose "Select Apps", to have those setup for you to use.
+
 ![Quick Setup Menu](https://i.imgur.com/l2gqFpp.png)
 
 ## Custom Setup
