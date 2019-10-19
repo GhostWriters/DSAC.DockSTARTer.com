@@ -1,8 +1,8 @@
 # <!-- Home -->
 
-DockSTARTer App Config
+[![DockSTARTer App Configurator](https://raw.githubusercontent.com/GhostWriters/DSAC.DockSTARTer.com/master/docs/img/logo.png)](https://dsac.dockstarter.com)
 
-The main goal of DockSTARTer App Config (aka DSAC) is to make it quick and easy to get you running with some basic configurations.
+The main goal of DockSTARTer App Configurator (aka DSAC) is to make it quick and easy to get you running with some basic configurations.
 
 You may choose to rely on DSAC for various changes to your Docker system, or use it as a stepping stone and learn to do more advanced configurations and connecting applications together.
 
