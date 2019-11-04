@@ -99,4 +99,4 @@ This project exists thanks to all the people who contribute!
 
 ## Special Thanks
 
-In addition to all those mention on [[DockSTARTer](https://dockstarter.com/)] we would also like to thank [[GhostWriters](https://github.com/GhostWriters/)] for being willing to partner and work with us to create DSAC!
+- [[DockSTARTer](https://dockstarter.com/)] for providing a clean and simple way to get setup with Docker and a stepping stone for this project.
